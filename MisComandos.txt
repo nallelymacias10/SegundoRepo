@@ -1,0 +1,73 @@
+nay_c@LAPTOP-9QNO1S1K MINGW64 /c/Intersemestral/SegundoRepo (master)
+$ touch alumno1.py alumno2.py alumno3.py readme.md
+
+nay_c@LAPTOP-9QNO1S1K MINGW64 /c/Intersemestral/SegundoRepo (master)
+$ git add *.py
+
+nay_c@LAPTOP-9QNO1S1K MINGW64 /c/Intersemestral/SegundoRepo (master)
+$ git status
+On branch master
+
+  (use "git add <file>..." to include in what will be committed)l be committed)
+        readme.md
+nay_c@LAPTOP-9QNO1S1K MINGW64 /c/Intersemestral/SegundoRepo (master)
+$                                                                                                        $                                         $ git commit -m"add alumno 1,2,3"
+[master (root-commit) 206f563] add alumno 1,2,3
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 alumno1.py
+ create mode 100644 alumno2.py
+ create mode 100644 alumno3.py
+
+ nay_c@LAPTOP-9QNO1S1K MINGW64 /c/Intersemestral/SegundoRepo (master)
+$ git add *.md
+
+nay_c@LAPTOP-9QNO1S1K MINGW64 /c/Intersemestral/SegundoRepo (master)
+$ git status
+On branch master
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   readme.md
+
+nay_c@LAPTOP-9QNO1S1K MINGW64 /c/Intersemestral/SegundoRepo (master)egundoRepo (master)
+$ git commit -m"add saludo"
+[master 6383381] add saludo                      egundoRepo (master)
+ 4 files changed, 3 insertions(+)
+ create mode 100644 readme.md
+
+ nay_c@LAPTOP-9QNO1S1K MINGW64 /c/Intersemestral/SegundoRepo (master)
+$ git add alumno3.py                             egundoRepo (master)
+nay_c@LAPTOP-9QNO1S1K MINGW64 /c/Intersemestral/SegundoRepo (master)                              egundoRepo (master)
+$ git rm --checked alumno3.py
+error: unknown option `checked'
+usage: git rm [<options>] [--] <file>...
+
+    -n, --dry-run         dry run
+    -q, --quiet           do not list removed files
+    --cached              only remove from the index
+    -f, --force           override the up-to-date check
+    -r                    allow recursive removal
+    --ignore-unmatch      exit with a zero status even if nothing matched
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+nay_c@LAPTOP-9QNO1S1K MINGW64 /c/Intersemestral/SegundoRepo (master)
+$ git rm --cached alumno3.py
+rm 'alumno3.py'
+
+nay_c@LAPTOP-9QNO1S1K MINGW64 /c/Intersemestral/SegundoRepo (master)
+$ git status
+On branch master
+Your branch is based on 'origin/master', but the 
+upstream is gone.
+  (use "git branch --unset-upstream" to fixup)   
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    alumno3.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        alumno3.py
