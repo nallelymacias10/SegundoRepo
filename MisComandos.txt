@@ -1,73 +1,48 @@
-nay_c@LAPTOP-9QNO1S1K MINGW64 /c/Intersemestral/SegundoRepo (master)
-$ touch alumno1.py alumno2.py alumno3.py readme.md
+Integrar un archivo .txt con los comando que escribio para resolver el laboratorio
+	Laboratorio Git. 
+	1.- Entrar a su cuenta de GitHub y crear un repositorio llamado SegundoRepo
+	2.- Clonar el repositorio SegundoRepo en su computadora, en la carpeta del curso
+         git clone https://github.com/nallelymacias10/SegundoRepo.git
 
-nay_c@LAPTOP-9QNO1S1K MINGW64 /c/Intersemestral/SegundoRepo (master)
-$ git add *.py
+	3.- Ingresar al repositorio usando cd SegundoRepo
+	       cd SegundoRepo
+  
+  4.- Abrir el visual studio code. Escribir code .
+	        code .
+  
+  5.- Crear los siguientes archivos:  alumno1.py, alumno2.py, alumno3.py, readme.md
+          touch alumno1.py alumno2.py alumno3.py readme.py
 
-nay_c@LAPTOP-9QNO1S1K MINGW64 /c/Intersemestral/SegundoRepo (master)
-$ git status
-On branch master
+	6.- Poner en seguimiento unicamente los archivo .py
+          git add .py
 
-  (use "git add <file>..." to include in what will be committed)l be committed)
-        readme.md
-nay_c@LAPTOP-9QNO1S1K MINGW64 /c/Intersemestral/SegundoRepo (master)
-$                                                                                                        $                                         $ git commit -m"add alumno 1,2,3"
-[master (root-commit) 206f563] add alumno 1,2,3
- 3 files changed, 0 insertions(+), 0 deletions(-)
- create mode 100644 alumno1.py
- create mode 100644 alumno2.py
- create mode 100644 alumno3.py
+	7.- Hacer un commit con el mensaje "add alumno 1,2,3"
+	        git commit -m"add alumno 1,2,3"
+  
+  9.- Poner en seguimiento el archivo readme.md
+	        git add readme.md
+  
+  10.-Hacer un commit con el mensaje "add readme"
+	        git commit -m"add readme"
+  
+  11.-Mostrar la historia del repositorio
+          git log
 
- nay_c@LAPTOP-9QNO1S1K MINGW64 /c/Intersemestral/SegundoRepo (master)
-$ git add *.md
+	12.-A los archivos .py agregar a cada uno de ellos en print("hola")
+	        print("Hola)
+  
+  13.-Prepara los cambios de los archivos y hacer commit con el mensaje "add saludo"
+         	git add *.py
+          git commit -m"add Saludo"
 
-nay_c@LAPTOP-9QNO1S1K MINGW64 /c/Intersemestral/SegundoRepo (master)
-$ git status
-On branch master
-Your branch is based on 'origin/master', but the upstream is gone.
-  (use "git branch --unset-upstream" to fixup)
+  14.-Al archivo alumno3.py, agregarle el print("saludos")
+          print("saludo")
 
-Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
-        new file:   readme.md
-
-nay_c@LAPTOP-9QNO1S1K MINGW64 /c/Intersemestral/SegundoRepo (master)egundoRepo (master)
-$ git commit -m"add saludo"
-[master 6383381] add saludo                      egundoRepo (master)
- 4 files changed, 3 insertions(+)
- create mode 100644 readme.md
-
- nay_c@LAPTOP-9QNO1S1K MINGW64 /c/Intersemestral/SegundoRepo (master)
-$ git add alumno3.py                             egundoRepo (master)
-nay_c@LAPTOP-9QNO1S1K MINGW64 /c/Intersemestral/SegundoRepo (master)                              egundoRepo (master)
-$ git rm --checked alumno3.py
-error: unknown option `checked'
-usage: git rm [<options>] [--] <file>...
-
-    -n, --dry-run         dry run
-    -q, --quiet           do not list removed files
-    --cached              only remove from the index
-    -f, --force           override the up-to-date check
-    -r                    allow recursive removal
-    --ignore-unmatch      exit with a zero status even if nothing matched
-    --pathspec-from-file <file>
-                          read pathspec from file
-    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
-nay_c@LAPTOP-9QNO1S1K MINGW64 /c/Intersemestral/SegundoRepo (master)
-$ git rm --cached alumno3.py
-rm 'alumno3.py'
-
-nay_c@LAPTOP-9QNO1S1K MINGW64 /c/Intersemestral/SegundoRepo (master)
-$ git status
-On branch master
-Your branch is based on 'origin/master', but the 
-upstream is gone.
-  (use "git branch --unset-upstream" to fixup)   
-
-Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
-        deleted:    alumno3.py
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        alumno3.py
+	15.-Preparar el archivo3.py para hacer commit
+	        git commit -m"saludo"
+  
+  16.-Quita el archivo3.py del area de preparacion
+	        git restore --staged alumno3.py
+  
+  17.-Restaura el archivo3.py descartando los cambios hechos.
+          git add alumno3.py
